@@ -1,0 +1,161 @@
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Tragamonedas </title>
+        <link rel="stylesheet" href="/css/styletm.css">
+        <link rel="stylesheet" href="/css/responsive.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+    </head>
+
+    <body>
+
+        <!--aqui esta el contenedor del juego-->
+        <div id="machine-container">
+            <div id="machine">
+                <div class="leds">
+                    <div class="leds-top">
+                        <div class="led"></div>
+                        <div class="led"></div>
+                        <div class="led"></div>
+                        <div class="led"></div>
+                        <div class="led"></div>
+                        <div class="led"></div>
+                    </div>
+                    <div class="leds-bottom">
+                        <div class="led"></div>
+                        <div class="led"></div>
+                        <div class="led"></div>
+                        <div class="led"></div>
+                        <div class="led"></div>
+                        <div class="led"></div>
+                    </div>
+                </div>
+                <div class="slot">
+                    <div class="shadow-slot"></div><img src="/img/numero7.png" alt="" class="slot-img" id="">
+                </div>
+                <div class="slot">
+                    <div class="shadow-slot"></div><img src="/img/numero7.png" alt="" class="slot-img" id="">
+                </div>
+                <div class="slot">
+                    <div class="shadow-slot"></div><img src="/img/numero7.png" alt="" class="slot-img" id="">
+                </div>
+            </div>
+        </div>
+        <div class="message">
+            <p>PULSA!</p>
+        </div>
+        <div class="buttons">
+            <button class="button">
+                <div class="button-shadow"></div>
+            </button>
+        </div>
+
+        <!--audios del juego-->
+        <audio class="audio" src="./audio/casino.mp3"></audio>
+        <audio class="audio2"
+            src="https://pic.pikbest.com/17/96/46/77r888piCM2b.mp3"></audio>
+        <audio src="https://pic.pikbest.com/00/57/85/70V888piCTR3.mp3" class="audio3"></audio>
+        <audio src="https://pic.pikbest.com/00/36/80/30m888piCDQ5.mp3" class="audio4"></audio>
+        <!--Estado del jugador-->
+        <div id="status-container">
+            <div class="user">
+                <img src=""
+                    class="user-perfil">
+                <p class="name"></p>
+            </div>
+            <button>
+                <a class="backmenu" href="/src/index.html">
+            <h2 class="backmenu" >  VOLVER AL MENU </h2>
+        </a>
+        
+        </button>
+            <div class="coin-container">
+                <p>Saldo:</p>
+                <p class="coins"> 100</p>
+                <img src="/img/simbolodolar.png" class="coins-img">
+            </div>
+        </div>
+        <!--instrucciones-->
+        <button class="help-button">
+            <img src="/img/reglas.png">
+        </button>
+        <div class="help-container filter">
+            <h2>Reglas del juego</h2>
+            <div class="help-section">
+                <div class="grid-item">
+                    <h3>Como empezar?</h3>
+                    <img src="/img/triple.png" alt="">
+                    <p>Pulse el boton que se encuentra en el centro para empezar a jugar, la maquina empezara a modificar
+                        sus valores de forma continua y solo puede detenerlo pulsandolo nuevamente, en caso de 3 items distintos, se le descontara -$100. </p>
+                </div>
+                <div class="grid-item">
+                    <h3>Doble valor</h3>
+                    <img src="/img/doble.png" alt="">
+                    <div class="doble-valor-container">
+                        <div class="doble-valor-item">
+                            <img src="/img/cereza.png" alt="">
+                            <p>Doble cereza: 10 pesos</p>
+                        </div>
+                        <div class="doble-valor-item">
+                            <img src="/img/naranja.png" alt="">
+                            <p>Doble naranja: 20 pesos</p>
+                        </div>
+                        <div class="doble-valor-item">
+                            <img src="/img/numero7.png" alt="">
+                            <p>Doble 7: 30 pesos</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <h3>Triple valor</h3>
+                    <img src="/img/triple.png" alt="">
+                    <div class="doble-valor-container">
+                        <div class="doble-valor-item">
+                            <img src="/img/cereza.png" alt="">
+                            <p>Triple cereza: 100 pesos</p>
+                        </div>
+                        <div class="doble-valor-item">
+                            <img src="/img/naranja.png" alt="">
+                            <p>Triple naranja: 200 pesos</p>
+                        </div>
+                        <div class="doble-valor-item">
+                            <img src="/img/numero7.png" alt="">
+                            <p>Triple 7: 300 pesoss</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="help-quit">
+                X
+            </div>
+        </div>
+        <!--recargar-->
+        <div class="charge-container filter">
+            <div class="charge">
+                <img src="/img/simbolodolar.png">
+                <p>Ingrese el monto a recargar</p>
+                <div class="charge-inputText">
+                    <input type="number" placeholder="Maxima recarga de 10.000!" value="">
+                </div>
+                <button class="charge-inputButton">
+                    Recargar!
+                </button>
+            </div>
+            <div class="quit-charge">X</div>
+        </div>
+        <button class="charge-button">
+            <img src="/img/reacrga1.png">
+            Recargar
+        </button>
+        <div class="loader no-loader">
+            <div class="container-loader">
+                <p> ALLINS CASINO</p>
+            </div>
+        </div>
+    </body>
+    <script src="/jscript/tmmain.js"></script>
+
+    </html>
